@@ -1,0 +1,38 @@
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\Users\Asus\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\dotnet projects\ShopProject\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

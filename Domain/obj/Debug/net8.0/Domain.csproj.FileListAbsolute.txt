@@ -1,0 +1,22 @@
+C:\Users\Asus\RiderProjects\ShopProject\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Asus\RiderProjects\ShopProject\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Asus\RiderProjects\ShopProject\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Asus\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\dotnet projects\ShopProject\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\dotnet projects\ShopProject\Domain\bin\Debug\net8.0\Domain.dll
+C:\dotnet projects\ShopProject\Domain\bin\Debug\net8.0\Domain.pdb
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\Domain.dll
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\Domain.pdb
+C:\dotnet projects\ShopProject\Domain\obj\Debug\net8.0\ref\Domain.dll
