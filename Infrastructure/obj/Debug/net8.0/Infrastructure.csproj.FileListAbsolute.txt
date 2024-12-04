@@ -36,3 +36,23 @@ C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\refint\Infrastruc
 C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\dotnet projects\ShopProject\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

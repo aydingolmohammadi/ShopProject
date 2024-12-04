@@ -11,7 +11,6 @@ public class DataBaseContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
-    public DbSet<Profile> Profiles { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -23,11 +22,6 @@ public class DataBaseContext : DbContext
         modelBuilder.Entity<User>(user =>
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserMapping).Assembly);
-        });
-
-        modelBuilder.Entity<Profile>(profile =>
-        {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProfileMapping).Assembly);
         });
     }
 }

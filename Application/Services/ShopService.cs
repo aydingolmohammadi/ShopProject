@@ -12,11 +12,11 @@ public class ShopService : IShopService
     {
         _userRepository = userRepository;
     }
-    public async Task AddUser(AddUserRequestDto requestDto)
+    public async Task AddUser(AddUserRequestDto addUserRequestDto)
     {
         try
         {
-            var user = requestDto.AddUserMapper();
+            var user = addUserRequestDto.AddUserMapper();
             await _userRepository.AddUser(user);
             await _userRepository.Save();
         }
@@ -31,6 +31,20 @@ public class ShopService : IShopService
         var user = await _userRepository.GetUser(userId);
         if (user == null) throw new Exception("User not found");
         return user.GetUserMapper();
+    }
+
+    public IEnumerable<GetUserResponseDto> GetAllUsers()
+    {
+        var users = _userRepository.GetAllUsers();
+        return users.Select(u => u.GetUserMapper()).ToList();
+    }
+
+    public async Task UpdateUser(UpdateUserRequestDto updateUserRequestDto)
+    {
+        var user = updateUserRequestDto.UpdateUserMapper();
+        if (await _userRepository.GetUser(user.Id) == null) throw new Exception("User not found");
+        await _userRepository.UpdateUser(user);
+        await _userRepository.Save();
     }
 
     public async Task DeleteUser(long userId)

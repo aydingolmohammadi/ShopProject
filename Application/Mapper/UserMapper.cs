@@ -5,38 +5,23 @@ namespace Application.Mapper;
 
 public static class UserMapper
 {
-    public static User AddUserMapper(this AddUserRequestDto requestDto) => new User
+    public static User AddUserMapper(this AddUserRequestDto addUserRequestDto) => new User
     {
-        Username = requestDto.Username,
-        Mobile = requestDto.Mobile,
-        Profile = CreateProfile(requestDto.Profile)
+        Username = addUserRequestDto.Username,
+        Mobile = addUserRequestDto.Mobile
     };
 
     public static GetUserResponseDto GetUserMapper(this User user) => new GetUserResponseDto
     {
-        UserId = user.UserId,
+        Id = user.Id,
         Username = user.Username,
-        Mobile = user.Mobile,
-        Profile = GetProfileResponseMapper(user.Profile)
+        Mobile = user.Mobile
     };
 
-    private static Profile CreateProfile(AddUserProfileRequestDto profileDto)
+    public static User UpdateUserMapper(this UpdateUserRequestDto updateUserRequestDto) => new User
     {
-        return new Profile
-        {
-            UserId = profileDto.UserId,
-            Address = profileDto.Address,
-            Bio = profileDto.Bio
-        };
-    }
-
-    private static GetUserProfileResponseDto GetProfileResponseMapper(Profile profile)
-    {
-        return new GetUserProfileResponseDto
-        {
-            Id = profile.Id,
-            Address = profile.Address,
-            Bio = profile.Bio
-        };
-    }
+        Id = updateUserRequestDto.Id,
+        Username = updateUserRequestDto.Username,
+        Mobile = updateUserRequestDto.Mobile
+    };
 }

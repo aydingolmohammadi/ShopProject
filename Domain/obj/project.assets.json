@@ -8,19 +8,20 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Rahbo\\.nuget\\packages\\": {}
+    "C:\\Users\\a.golmohammadi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dotnet projects\\ShopProject\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\dotnet projects\\ShopProject\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Rahbo\\.nuget\\packages\\",
-      "outputPath": "C:\\dotnet projects\\ShopProject\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\a.golmohammadi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\Rahbo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\a.golmohammadi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +39,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5b+OzcrPgr5ya/uuKmf0WybQqp5oqtOtPgNhkVXhwCWzi0uWLzJvUztMpVXplhvDA4cTVxRASkffZ3iza0KNgw==",
+  "dgSpecHash": "xoL5MpDHZx8=",
   "success": true,
-  "projectFilePath": "C:\\dotnet projects\\ShopProject\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

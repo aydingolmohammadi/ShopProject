@@ -26,6 +26,21 @@ public class UserController : ControllerBase
     {
         return Ok(await _shopService.GetUser(userId));
     }
+    
+    [HttpGet("GetAllUser")]
+    public ActionResult<ICollection<GetUserResponseDto>> GetUser()
+    {
+        return Ok(_shopService.GetAllUsers());
+    }
+    
+    
+    // todo: fix error
+    [HttpPut("UpdateUser")]
+    public async Task<ActionResult<string>> UpdateUser([FromBody] UpdateUserRequestDto updateUserRequestDto)
+    {
+        await _shopService.UpdateUser(updateUserRequestDto);
+        return Ok("User updated successfully");
+    }
 
     [HttpDelete("DeleteUser")]
     public async Task<ActionResult<string>> DeleteUser(long userId)
