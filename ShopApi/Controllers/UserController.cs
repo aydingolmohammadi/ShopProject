@@ -5,47 +5,46 @@ using Microsoft.AspNetCore.Mvc;
 namespace ShopApi.Controllers;
 
 [ApiController]
-[Route("api/User")]
+[Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    // change for profile branch
-    private readonly IShopService _shopService;
-    public UserController(IShopService shopService)
+    private readonly IUserService _userService;
+
+    public UserController(IUserService userService)
     {
-        _shopService = shopService;
+        _userService = userService;
     }
+
     [HttpPost("AddUser")]
-    public async Task<ActionResult<string>> AddUser([FromBody] AddUserRequestDto requestDto)
+    public async Task<ActionResult<string>> AddUser([FromBody] AddUserReqDto reqDto)
     {
-        await _shopService.AddUser(requestDto);
+        await _userService.AddUser(reqDto);
         return Ok("User added successfully");
     }
-    
-    [HttpGet("GetUser")]
-    public async Task<ActionResult<GetUserResponseDto>> GetUser(long userId)
+
+    [HttpGet("GetUserById")]
+    public async Task<ActionResult<GetUserByIdResDto>> GetUser(long userId)
     {
-        return Ok(await _shopService.GetUser(userId));
+        return Ok(await _userService.GetUserById(userId));
     }
-    
+
     [HttpGet("GetAllUser")]
-    public ActionResult<ICollection<GetUserResponseDto>> GetUser()
+    public ActionResult<ICollection<GetUserByIdResDto>> GetUser()
     {
-        return Ok(_shopService.GetAllUsers());
+        return Ok(_userService.GetAllUsers());
     }
-    
-    
-    // todo: fix error
+
     [HttpPut("UpdateUser")]
-    public async Task<ActionResult<string>> UpdateUser([FromBody] UpdateUserRequestDto updateUserRequestDto)
+    public async Task<ActionResult<string>> UpdateUser([FromBody] UpdateUserReqDto updateUserReqDto)
     {
-        await _shopService.UpdateUser(updateUserRequestDto);
+        await _userService.UpdateUser(updateUserReqDto);
         return Ok("User updated successfully");
     }
 
     [HttpDelete("DeleteUser")]
     public async Task<ActionResult<string>> DeleteUser(long userId)
     {
-        await _shopService.DeleteUser(userId);
+        await _userService.DeleteUser(userId);
         return Ok("User delete successfully");
     }
 }

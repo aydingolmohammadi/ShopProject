@@ -5,23 +5,23 @@ namespace Application.Mapper;
 
 public static class UserMapper
 {
-    public static User AddUserMapper(this AddUserRequestDto addUserRequestDto) => new User
+    public static User AddUserMapper(this AddUserReqDto addUserReqDto) => new User
     {
-        Username = addUserRequestDto.Username,
-        Mobile = addUserRequestDto.Mobile
+        Username = addUserReqDto.Username,
+        Mobile = addUserReqDto.Mobile
     };
 
-    public static GetUserResponseDto GetUserMapper(this User user) => new GetUserResponseDto
+    public static GetUserByIdResDto GetUserMapper(this User user) => new GetUserByIdResDto
     {
         Id = user.Id,
         Username = user.Username,
         Mobile = user.Mobile
     };
 
-    public static User UpdateUserMapper(this UpdateUserRequestDto updateUserRequestDto) => new User
+    public static User UpdateUserMapper(this UpdateUserReqDto updateUserReqDto) => new User
     {
-        Id = updateUserRequestDto.Id,
-        Username = updateUserRequestDto.Username,
-        Mobile = updateUserRequestDto.Mobile
+        Id = updateUserReqDto.Id,
+        Username = updateUserReqDto.Username,
+        Mobile = updateUserReqDto.Mobile
     };
 }

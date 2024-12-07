@@ -428,3 +428,4 @@ C:\Users\a.golmohammadi\RiderProjects\ShopProject\ShopApi\obj\Debug\net8.0\refin
 C:\Users\a.golmohammadi\RiderProjects\ShopProject\ShopApi\obj\Debug\net8.0\ShopApi.pdb
 C:\Users\a.golmohammadi\RiderProjects\ShopProject\ShopApi\obj\Debug\net8.0\ShopApi.genruntimeconfig.cache
 C:\Users\a.golmohammadi\RiderProjects\ShopProject\ShopApi\obj\Debug\net8.0\ref\ShopApi.dll
+C:\Users\a.golmohammadi\RiderProjects\ShopProject\ShopApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

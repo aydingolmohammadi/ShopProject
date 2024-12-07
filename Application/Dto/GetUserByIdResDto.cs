@@ -1,6 +1,6 @@
 namespace Application.Dto;
 
-public class GetUserResponseDto
+public class GetUserByIdResDto
 {
     public long Id { get; set; }
     public string Username { get; set; }

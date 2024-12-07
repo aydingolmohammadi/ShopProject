@@ -1,9 +1,9 @@
 using Domain.Models.Users;
 
-public interface IShopRepository
+public interface IUserRepository
 {
     Task AddUser(User user);
-    Task<User?> GetUser(long userId);
+    Task<User?> GetUserById(long userId);
     IEnumerable<User> GetAllUsers();
     Task UpdateUser(User user);
     Task DeleteUser(User user);

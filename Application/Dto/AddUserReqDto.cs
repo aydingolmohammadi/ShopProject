@@ -1,8 +1,7 @@
 namespace Application.Dto;
 
-public class UpdateUserRequestDto
+public class AddUserReqDto
 {
-    public long Id { get; set; }
     public string Username { get; set; }
     public string Mobile { get; set; }
 }
