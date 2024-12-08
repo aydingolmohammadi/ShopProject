@@ -8,17 +8,20 @@ namespace Application.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
+
     public UserService(IUserRepository userRepository)
     {
         _userRepository = userRepository;
     }
-    public async Task AddUser(AddUserReqDto addUserReqDto)
+
+    public async Task<User?> RegisterUser(AddUserReqDto addUserReqDto)
     {
         try
         {
             var user = addUserReqDto.AddUserMapper();
-            await _userRepository.AddUser(user);
+            await _userRepository.RegisterUser(user);
             await _userRepository.Save();
+            return user;
         }
         catch (Exception ex)
         {
@@ -41,9 +44,11 @@ public class UserService : IUserService
 
     public async Task UpdateUser(UpdateUserReqDto updateUserReqDto)
     {
-        var user = updateUserReqDto.UpdateUserMapper();
-        if (await _userRepository.GetUserById(user.Id) == null) throw new Exception("User not found");
-        _userRepository.UpdateUser(user);
+        var existingUser = await _userRepository.GetUserById(updateUserReqDto.Id);
+        if (existingUser == null) throw new Exception("User not found");
+
+        existingUser.Username = updateUserReqDto.Username;
+        existingUser.Mobile = updateUserReqDto.Mobile;
         await _userRepository.Save();
     }
 
