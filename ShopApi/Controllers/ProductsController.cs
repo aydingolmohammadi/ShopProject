@@ -12,7 +12,7 @@ public class ProductsController : ControllerBase
     [Authorize]
     public async Task<ActionResult<ProductsResDto>> Products()
     {
-        return Ok(new ProductsResDto()
+        return Ok(new ProductsResDto
         {
             Name = "Watch",
             Description = "Watch product by name and description.",

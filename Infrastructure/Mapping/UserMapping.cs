@@ -10,6 +10,6 @@ public class UserMapping : IEntityTypeConfiguration<User>
     {
         builder.ToTable("User").HasKey(p => p.Id);
         builder.Property(p => p.Username).HasMaxLength(150).IsRequired();
-        builder.Property(p => p.Mobile).HasMaxLength(11).IsRequired();
+        builder.Property(p => p.Password).HasMaxLength(20).IsRequired();
     }
 }

@@ -1,45 +1,50 @@
 using Application.Contracts;
 using Application.Dto;
 using Application.Mapper;
-using Domain.Models.Users;
 
 namespace Application.Services;
 
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
+    private readonly JwtHelper _jwtHelper;
 
-    public UserService(IUserRepository userRepository)
+    public UserService(IUserRepository userRepository, JwtHelper jwtHelper)
     {
         _userRepository = userRepository;
+        _jwtHelper = jwtHelper;
     }
 
-    public async Task<User?> RegisterUser(AddUserReqDto addUserReqDto)
+    public async Task<RegisterUserResDto> RegisterUser(RegisterUserReqDto registerUserReqDto)
     {
-        try
+        var user = registerUserReqDto.Factory();
+        if (await _userRepository.FindUser(user) is not null)
         {
-            var user = addUserReqDto.AddUserMapper();
-            await _userRepository.RegisterUser(user);
-            await _userRepository.Save();
-            return user;
+            throw new Exception("Username already exists.");
         }
-        catch (Exception ex)
+
+        await _userRepository.RegisterUser(user);
+        await _userRepository.Save();
+
+        var token = _jwtHelper.GenerateTokenAsync(user);
+
+        return new RegisterUserResDto
         {
-            throw new Exception("Failed to add user", ex);
-        }
+            Token = token
+        };
     }
 
     public async Task<GetUserByIdResDto> GetUserById(long userId)
     {
         var user = await _userRepository.GetUserById(userId);
         if (user == null) throw new Exception("User not found");
-        return user.GetUserMapper();
+        return user.Factory();
     }
 
     public IEnumerable<GetUserByIdResDto> GetAllUsers()
     {
         var users = _userRepository.GetAllUsers();
-        return users.Select(u => u.GetUserMapper()).ToList();
+        return users.Select(u => u.Factory()).ToList();
     }
 
     public async Task UpdateUser(UpdateUserReqDto updateUserReqDto)
@@ -48,7 +53,7 @@ public class UserService : IUserService
         if (existingUser == null) throw new Exception("User not found");
 
         existingUser.Username = updateUserReqDto.Username;
-        existingUser.Mobile = updateUserReqDto.Mobile;
+        existingUser.Password = updateUserReqDto.Password;
         await _userRepository.Save();
     }
 

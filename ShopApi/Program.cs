@@ -13,49 +13,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(
-    o => {
-        o.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
-        {
-            Description = @"JWT Authorization header using the Bearer scheme. 
-                      Enter 'Bearer' [space] and then your token in the text input below.
-                      Example: 'Bearer $token'",
-            Name = "Authorization",
-            In = ParameterLocation.Header,
-            Type = SecuritySchemeType.ApiKey,
-            Scheme = "Bearer"
-        });
-
-        o.AddSecurityRequirement(new OpenApiSecurityRequirement()
-        {
-            {
-                new OpenApiSecurityScheme()
-                {
-                    Reference = new OpenApiReference()
-                    {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer"
-                    },
-                    Scheme = "oauth2",
-                    Name = "Bearer",
-                    In = ParameterLocation.Header
-                },
-                new List<string>()
-            }
-        });
-
-        o.SwaggerDoc("v1",new OpenApiInfo()
-        {
-            Version = "v1",
-            Title = "Shop project"
-        });
-}
-);
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-
-# region <Auth>
+builder.Services.AddSingleton<JwtHelper>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var jwtOptions = configuration.GetSection("JwtSettings");
+    string? issuer = jwtOptions["Issuer"] ?? "";
+    string? audience = jwtOptions["Audience"] ?? "";
+    string? key = jwtOptions["Key"] ?? "";
+    return new JwtHelper(issuer, audience, key);
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -65,9 +35,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidateLifetime = true,
-            ValidIssuer = "http://localhost:5295",
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ShopProject - secret")),
             ValidateIssuerSigningKey = true,
+            ValidIssuer = "http://localhost:7245/",
+            ValidAudience = "http://localhost:7245/",
+            IssuerSigningKey =
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes("S132ASDD132DGF89DSFDFGG4789SA3213KKJBDFVV")),
         };
     });
 builder.Services.AddCors(options =>
@@ -86,8 +58,6 @@ builder.Services.AddCors(options =>
     );
 });
 
-# endregion
-
 builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseSqlServer("Server=.;Database=ShopProject;Integrated Security=true;TrustServerCertificate=true"));
 
@@ -101,6 +71,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("ShopProject - CorsPolicy");
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

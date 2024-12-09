@@ -5,7 +5,7 @@ namespace Application.Contracts;
 
 public interface IUserService
 {
-    Task<User?> RegisterUser(AddUserReqDto addUserReqDto);
+    Task<RegisterUserResDto> RegisterUser(RegisterUserReqDto registerUserReqDto);
 
     Task<GetUserByIdResDto> GetUserById(long userId);
     IEnumerable<GetUserByIdResDto> GetAllUsers();
