@@ -7,31 +7,25 @@ namespace Application.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
-    private readonly JwtHelper _jwtHelper;
+    private readonly TokenGenerator _tokenGenerator;
 
-    public UserService(IUserRepository userRepository, JwtHelper jwtHelper)
+    public UserService(IUserRepository userRepository, TokenGenerator tokenGenerator)
     {
         _userRepository = userRepository;
-        _jwtHelper = jwtHelper;
+        _tokenGenerator = tokenGenerator;
     }
 
     public async Task<RegisterUserResDto> RegisterUser(RegisterUserReqDto registerUserReqDto)
     {
         var user = registerUserReqDto.Factory();
-        if (await _userRepository.FindUser(user) is not null)
+        if (await _userRepository.FindUser(user) is null)
         {
-            throw new Exception("Username already exists.");
+            await _userRepository.RegisterUser(user);
+            await _userRepository.Save();
         }
 
-        await _userRepository.RegisterUser(user);
-        await _userRepository.Save();
-
-        var token = _jwtHelper.GenerateTokenAsync(user);
-
-        return new RegisterUserResDto
-        {
-            Token = token
-        };
+        var token = _tokenGenerator.GenerateTokenAsync(user);
+        return new RegisterUserResDto { Token = token };
     }
 
     public async Task<GetUserByIdResDto> GetUserById(long userId)

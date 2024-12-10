@@ -1,4 +1,5 @@
 using System.Text;
+using Application;
 using Application.Contracts;
 using Application.Services;
 using Infrastructure;
@@ -17,15 +18,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddSingleton<JwtHelper>(provider =>
-{
-    var configuration = provider.GetRequiredService<IConfiguration>();
-    var jwtOptions = configuration.GetSection("JwtSettings");
-    string? issuer = jwtOptions["Issuer"] ?? "";
-    string? audience = jwtOptions["Audience"] ?? "";
-    string? key = jwtOptions["Key"] ?? "";
-    return new JwtHelper(issuer, audience, key);
-});
+
+var config = builder.Configuration.GetSection("JwtSettings").Get<Config>();
+builder.Services.AddSingleton(config);
+builder.Services.AddSingleton<TokenGenerator>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -36,10 +32,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = "http://localhost:7245/",
-            ValidAudience = "http://localhost:7245/",
+            ValidIssuer = config.Issuer,
+            ValidAudience = config.Audience,
             IssuerSigningKey =
-                new SymmetricSecurityKey(Encoding.UTF8.GetBytes("S132ASDD132DGF89DSFDFGG4789SA3213KKJBDFVV")),
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.Key)),
         };
     });
 builder.Services.AddCors(options =>
@@ -50,7 +46,7 @@ builder.Services.AddCors(options =>
         {
             c.AllowAnyOrigin()
                 .AllowAnyHeader()
-                .WithOrigins("http://localhost:5295")
+                .WithOrigins(config.Issuer)
                 .AllowAnyMethod()
                 .AllowCredentials()
                 .Build();

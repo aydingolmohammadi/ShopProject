@@ -4,17 +4,14 @@ using System.Text;
 using Domain.Models.Users;
 using Microsoft.IdentityModel.Tokens;
 
-public class JwtHelper
-{
-    private readonly string _issuer;
-    private readonly string _audience;
-    private readonly string _key;
+namespace Application.Services;
 
-    public JwtHelper(string issuer, string audience, string key)
+public class TokenGenerator
+{
+    private readonly Config _config;
+    public TokenGenerator(Config config)
     {
-        _issuer = issuer;
-        _audience = audience;
-        _key = key;
+        _config = config;
     }
 
     public string GenerateTokenAsync(User user)
@@ -25,12 +22,11 @@ public class JwtHelper
         };
 
         var token = new JwtSecurityToken(
-            issuer: _issuer,
-            audience: _audience,
+            issuer: _config.Audience,
             claims: claims,
             expires: DateTime.Now.AddDays(1),
             signingCredentials: new SigningCredentials(
-                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_key)),
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.Key)),
                 algorithm: SecurityAlgorithms.HmacSha256
             )
         );
