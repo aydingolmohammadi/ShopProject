@@ -1,6 +1,5 @@
 namespace Application;
 
-//ali change 
 public class Config
 {
     public string Issuer { get; set; }

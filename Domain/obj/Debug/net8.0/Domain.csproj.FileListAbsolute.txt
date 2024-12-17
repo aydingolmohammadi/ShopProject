@@ -32,3 +32,15 @@ C:\Users\a.golmohammadi\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain
 C:\Users\a.golmohammadi\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\a.golmohammadi\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\a.golmohammadi\RiderProjects\ShopProject\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Projects\DotnetProject\ShopProject\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Projects\DotnetProject\ShopProject\Domain\bin\Debug\net8.0\Domain.dll
+D:\Projects\DotnetProject\ShopProject\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.dll
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\ref\Domain.dll

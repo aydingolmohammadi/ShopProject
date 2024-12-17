@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p3z+IAc5N+M=",
+  "dgSpecHash": "a/SsCy9XotI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Application\\Application.csproj",
+  "projectFilePath": "D:\\Projects\\DotnetProject\\ShopProject\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a.golmohammadi\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "C:\\Users\\a.golmohammadi\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",

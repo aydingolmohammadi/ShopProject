@@ -227,11 +227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\Projects\\DotnetProject\\ShopProject\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Application\\Application.csproj",
+      "projectPath": "D:\\Projects\\DotnetProject\\ShopProject\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\a.golmohammadi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Application\\obj\\",
+      "outputPath": "D:\\Projects\\DotnetProject\\ShopProject\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
@@ -247,8 +247,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\a.golmohammadi\\RiderProjects\\ShopProject\\Domain\\Domain.csproj"
+            "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj"
             }
           }
         }
