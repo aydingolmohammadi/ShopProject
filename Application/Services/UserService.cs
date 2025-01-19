@@ -1,8 +1,8 @@
-using Application.Contracts;
-using Application.Dto;
-using Application.Mapper;
+using ShopProject.Application.Mapper;
+using ShopProject.Application.Contracts;
+using ShopProject.Application.Dto;
 
-namespace Application.Services;
+namespace ShopProject.Application.Services;
 
 public class UserService : IUserService
 {

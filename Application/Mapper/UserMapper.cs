@@ -1,7 +1,7 @@
-using Application.Dto;
 using Domain.Models.Users;
+using ShopProject.Application.Dto;
 
-namespace Application.Mapper;
+namespace ShopProject.Application.Mapper;
 
 public static class UserMapper
 {

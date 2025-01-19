@@ -1,7 +1,7 @@
-using Application.Dto;
 using Domain.Models.Users;
+using ShopProject.Application.Dto;
 
-namespace Application.Contracts;
+namespace ShopProject.Application.Contracts;
 
 public interface IUserService
 {

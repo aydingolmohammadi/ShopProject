@@ -1,13 +1,12 @@
 using System.Text;
-using Application;
-using Application.Contracts;
-using Application.Services;
+using ShopProject.Application;
+using ShopProject.Application.Contracts;
+using ShopProject.Application.Services;
 using Infrastructure;
 using Infrastructure.repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,4 +1,4 @@
-namespace Application.Dto;
+namespace ShopProject.Application.Dto;
 
 public class RegisterUserResDto
 {

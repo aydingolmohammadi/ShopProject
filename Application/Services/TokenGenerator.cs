@@ -4,7 +4,7 @@ using System.Text;
 using Domain.Models.Users;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Application.Services;
+namespace ShopProject.Application.Services;
 
 public class TokenGenerator
 {

@@ -1,4 +1,4 @@
-using Application.Dto;
+using ShopProject.Application.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

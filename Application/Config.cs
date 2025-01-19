@@ -1,4 +1,4 @@
-namespace Application;
+namespace ShopProject.Application;
 
 public class Config
 {
