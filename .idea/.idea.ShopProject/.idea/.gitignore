@@ -1,13 +1,54 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Rider ignored files
-/projectSettingsUpdater.xml
-/.idea.ShopProject.iml
-/modules.xml
-/contentModel.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# Rider, Visual Studio, and VSCode settings
+.idea/
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+out/
+artifacts/
+TestResults/
+
+# Logs and temporary files
+*.log
+*.tlog
+*.tmp
+*.tmp.*
+*.temp
+
+# Dependency management
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+*.nuget/
+
+# Environment and config files
+.env
+.env.*
+*.config
+appsettings.*.json
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Resharper and Rider
+_ReSharper*/
+*.ReSharper
+**/*.DotSettings.user
+
+# Dotnet runtime-specific
+*.pdb
+*.dll
+*.exe
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.lock.json
