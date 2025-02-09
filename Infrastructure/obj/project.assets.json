@@ -3828,20 +3828,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a.golmohammadi\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\DotnetProject\\ShopProject\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Projects\\DotnetProjects\\ShopProject\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\Projects\\DotnetProject\\ShopProject\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\a.golmohammadi\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\DotnetProject\\ShopProject\\Infrastructure\\obj\\",
+      "projectPath": "C:\\Projects\\DotnetProjects\\ShopProject\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\DotnetProjects\\ShopProject\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\a.golmohammadi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3853,11 +3852,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\DotnetProject\\ShopProject\\Application\\Application.csproj": {
-              "projectPath": "D:\\Projects\\DotnetProject\\ShopProject\\Application\\Application.csproj"
+            "C:\\Projects\\DotnetProjects\\ShopProject\\Application\\Application.csproj": {
+              "projectPath": "C:\\Projects\\DotnetProjects\\ShopProject\\Application\\Application.csproj"
             },
-            "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj"
+            "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\Domain.csproj"
             }
           }
         }
@@ -3866,11 +3865,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3908,7 +3902,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

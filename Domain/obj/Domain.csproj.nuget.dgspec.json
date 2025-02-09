@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj": {}
+    "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj": {
+    "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\a.golmohammadi\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\DotnetProject\\ShopProject\\Domain\\obj\\",
+        "projectPath": "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DotnetProjects\\ShopProject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\a.golmohammadi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -33,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

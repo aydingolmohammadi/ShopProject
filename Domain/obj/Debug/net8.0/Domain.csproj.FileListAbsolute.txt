@@ -44,3 +44,15 @@ D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.dll
 D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\Domain.pdb
 D:\Projects\DotnetProject\ShopProject\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\.net project\ShopProject\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\.net project\ShopProject\Domain\bin\Debug\net8.0\Domain.dll
+C:\.net project\ShopProject\Domain\bin\Debug\net8.0\Domain.pdb
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.dll
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\Domain.pdb
+C:\.net project\ShopProject\Domain\obj\Debug\net8.0\ref\Domain.dll

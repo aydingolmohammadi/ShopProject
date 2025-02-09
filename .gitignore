@@ -1,34 +1,47 @@
-# Common IntelliJ Platform excludes
+# Ignore Rider project files
+.idea/
+.idea_modules/
+.idea_workspace.xml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/dictionaries/
+.idea/**/shelf/
 
-# User specific
-**/.idea/**/workspace.xml
-**/.idea/**/tasks.xml
-**/.idea/shelf/*
-**/.idea/dictionaries
-**/.idea/httpRequests/
-
-# Sensitive or high-churn files
-**/.idea/**/dataSources/
-**/.idea/**/dataSources.ids
-**/.idea/**/dataSources.xml
-**/.idea/**/dataSources.local.xml
-**/.idea/**/sqlDataSources.xml
-**/.idea/**/dynamic.xml
-
-# Rider
-# Rider auto-generates .iml files, and contentModel.xml
-**/.idea/**/*.iml
-**/.idea/**/contentModel.xml
-**/.idea/**/modules.xml
-
+# User-specific files
 *.suo
 *.user
-.vs/
-[Bb]in/
-[Oo]bj/
-_UpgradeReport_Files/
-[Pp]ackages/
+*.userosscache
+*.sln.docstates
 
-Thumbs.db
-Desktop.ini
+# Build output
+bin/
+obj/
+out/
+
+# Logs
+*.log
+*.tlog
+*.vscodecrash
+.vs/
+msbuild.log
+
+# Rider and ReSharper folders
+_ReSharper*/
+*.ReSharper
+**/*.DotSettings.user
+*.sln.iml
+.idea/
+
+# Dependencies
+*.nuget/
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Dotnet local settings
 .DS_Store
+.env
+*.tmp

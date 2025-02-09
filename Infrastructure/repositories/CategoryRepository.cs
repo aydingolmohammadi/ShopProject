@@ -1,11 +1,12 @@
 using Domain.Models.Categories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.repositories;
 
 public class CategoryRepository(DataBaseContext dbContext):ICategoryRepository
 {
 
-    public async Task<Category> GetById(int id)
+    public async Task<Category?> GetById(int id)
     {
         return await dbContext.Categories
             .Include(c => c.SubCategories)
@@ -19,17 +20,17 @@ public class CategoryRepository(DataBaseContext dbContext):ICategoryRepository
             .ToListAsync();
     }
 
-    public async Task Add(Category category)
+    public async Task Add(Category? category)
     {
         await dbContext.Categories.AddAsync(category);
     }
 
-    public void Update(Category category)
+    public void Update(Category? category)
     {
         dbContext.Categories.Update(category);
     }
 
-    public void Delete(Category category)
+    public void Delete(Category? category)
     {
         dbContext.Categories.Remove(category);
     }
