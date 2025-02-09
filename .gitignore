@@ -1,47 +1,54 @@
-# Ignore Rider project files
+# Rider, Visual Studio, and VSCode settings
 .idea/
-.idea_modules/
-.idea_workspace.xml
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/dictionaries/
-.idea/**/shelf/
-
-# User-specific files
+.vscode/
+.vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# Build output
+# Build outputs
 bin/
 obj/
 out/
+artifacts/
+TestResults/
 
-# Logs
+# Logs and temporary files
 *.log
 *.tlog
-*.vscodecrash
-.vs/
-msbuild.log
+*.tmp
+*.tmp.*
+*.temp
 
-# Rider and ReSharper folders
-_ReSharper*/
-*.ReSharper
-**/*.DotSettings.user
-*.sln.iml
-.idea/
-
-# Dependencies
-*.nuget/
+# Dependency management
 packages/
 *.nupkg
 project.lock.json
 project.fragment.lock.json
-artifacts/
+*.nuget/
 
-# Dotnet local settings
-.DS_Store
+# Environment and config files
 .env
-*.tmp
+.env.*
+*.config
+appsettings.*.json
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Resharper and Rider
+_ReSharper*/
+*.ReSharper
+**/*.DotSettings.user
+
+# Dotnet runtime-specific
+*.pdb
+*.dll
+*.exe
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.lock.json
